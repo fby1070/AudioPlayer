@@ -8,10 +8,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/fby1070/AudioPlayer"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "付宝阳" => "9622777@qq.com" }
-  s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/fby1070/AudioPlayer.git", :commit => "65c3d104b2817d8797af4abd5fac355340ac5167" }
+  s.platform     = :ios, "9.0"
+  s.source       = { :git => "https://github.com/fby1070/AudioPlayer.git", :tag => s.version }
   s.source_files  = AudioPlayer/*.{h,m}
   s.frameworks = "UIKit", "Foundation"
+  s.requires_arc  = true
   s.dependency "Masonry"
   s.dependency "SDWebImage"
   s.dependency "DOUAudioStreamer"
