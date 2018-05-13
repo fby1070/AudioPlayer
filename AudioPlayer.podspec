@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "AudioPlayer"
   s.version      = "0.0.1"
-  s.summary      = "基于DOUAudioStreamer音频播放器的封装"
+  s.summary      = "音频播放器的封装"
   s.description  = <<-DESC
 			基于DOUAudioStreamer音频播放器的封装
                    DESC
@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   s.dependency "Masonry"
   s.dependency "SDWebImage"
   s.dependency "DOUAudioStreamer"
+  s.dependency "ReactiveCocoa"
+  s.dependency "StarShareNetWorking"
+  s.dependency "StarShareCommons"
 
-  s.subspec 'AudioPlayer' do |ss|
-    ss.source_files = 'AudioPlayer/AudioPlayer/*.{h,m}'
-  end
 end
